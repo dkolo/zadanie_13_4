@@ -12,7 +12,6 @@ process.stdin.on('readable', function() {
                 break;
             case '/info':
                 process.stdout.write('Twoja wersja Node.js: ' + process.versions.node + '\n' + 'Język ustawiony w systemie : ' + process.env.LANG);
-                process.exit();
                 break;
             case '/getOSinfo':
                 OSinfo.print();
