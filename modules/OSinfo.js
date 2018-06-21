@@ -1,5 +1,5 @@
 var os = require('os');
-var time = require('./timeFormat')
+var timeFormat = require('./timeFormat');
 
 function getOSinfo() {
     var type = os.type();
@@ -14,7 +14,7 @@ function getOSinfo() {
     console.log('System:', type);
     console.log('Release:', release);
     console.log('CPU model:', cpu);
-    timeFormat.time();
+    timeFormat.clock();
     console.log('User name:', userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }
