@@ -1,4 +1,5 @@
 var os = require('os');
+var OSinfo = require('./OSinfo');
 
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
@@ -14,7 +15,7 @@ process.stdin.on('readable', function() {
                 process.exit();
                 break;
             case '/getOSinfo':
-                getOSinfo();
+                OSinfo.print();
                 break;
             default:
                 process.stderr.write('Wrong instruction!');
