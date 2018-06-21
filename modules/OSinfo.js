@@ -1,5 +1,5 @@
 var os = require('os');
-var time = require('timeFormat')
+var time = require('./timeFormat')
 
 function getOSinfo() {
     var type = os.type();
