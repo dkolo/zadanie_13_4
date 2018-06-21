@@ -1,5 +1,5 @@
 var os = require('os');
-var OSinfo = require('./OSinfo');
+var OSinfo = require('../modules/OSInfo');
 
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
